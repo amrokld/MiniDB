@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS activities (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    category VARCHAR(50),
+    duration INTEGER,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
